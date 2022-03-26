@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# GIT_COMMITTER_DATE="$(git show --format=%aD | head -1)" git tag -a 1.0.1 -m"v1.0.1"
+
 is_git_repo() {
     git rev-parse --show-toplevel > /dev/null 2>&1
     result=$?
